@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#clientesTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#clientesTable th,
+#clientesTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#clientesTable th {
+    background-color: #f2f2f2;
+}
+
+#clientesTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn.editar {
+    background-color: #2196f3;
+}
+
+.btn.excluir {
+    background-color: #f44336;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
