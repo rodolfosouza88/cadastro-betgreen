@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <title>Cadastro - Bet Green</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BET GREEN - Cadastro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#login-section" class="nav-link" data-target="login-section">Faça Login</a></li>
+                    <li><a href="#cadastro-section" class="nav-link" data-target="cadastro-section">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="login-section" class="active">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-campo">
+                    <label for="login-email">E-mail:</label>
+                    <input type="text" id="login-email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="login-senha">Senha:</label>
+                    <input type="password" id="login-senha" name="senha">
+                </div>
+                <button type="submit">Login</button>
+                <button id="forgot-password">Esqueci minha senha</button>
+                <i id="show-password" class="fas fa-eye"></i>
+            </form>
+        </div>
+    </section>
+
+    <section id="cadastro-section">
+        <div class="container">
+            <h2>Cadastro de Usuário</h2>
+            <form id="register-form">
+                <div class="form-campo">
+                    <label for="register-email">E-mail:</label>
+                    <input type="text" id="register-email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="register-nome">Nome:</label>
+                    <input type="text" id="register-nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="register-senha">Senha:</label>
+                    <input type="password" id="register-senha" name="senha">
+                </div>
+                <div class="form-campo">
+                    <label for="confirm-senha">Confirme a Senha:</label>
+                    <input type="password" id="confirm-senha" name="confirm_senha">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="clientes-section">
+        <div class="container">
+            <h2>Cadastro de Clientes</h2>
+            <form id="client-form">
+                <div class="form-campo">
+                    <label for="client-nome">Nome:</label>
+                    <input type="text" id="client-nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="client-telefone">Telefone:</label>
+                    <input type="text" id="client-telefone" name="telefone">
+                </div>
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+            <h3>Clientes Cadastrados</h3>
+            <ul id="client-list"></ul>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-pP2F+KHekTrSPbPNEewIvJ3M2Sn3AnExG5zp+0JDqGs0cVd+5cNTFrAz2v62jBS/7r0+PKdSY3TjrQJgffO+Vg==" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
